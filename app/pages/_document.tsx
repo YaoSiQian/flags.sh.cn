@@ -11,13 +11,13 @@ export default class BlitzDocument extends Document {
 
     render() {
         return (
-            <Html lang="en">
+            <html lang="zh-Hans-CN">
                 <DocumentHead />
                 <body>
                     <Main />
                     <BlitzScript />
                 </body>
-            </Html>
+            </html>
         );
     }
 }

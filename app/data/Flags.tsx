@@ -124,7 +124,7 @@ export const Flags: FlagsInterface = {
         "aikars": {
             "key": "aikars",
             "label": "Aikar's Flags",
-            "description": "The high-performance and recommended flags.",
+            "description": "非常高性能、且十分流行的服务器启动参数",
             "result": ({ memory, filename, gui, pterodactyl, modernVectors }) => {
                 const base = `${aikarsFlags.base} ${memory >= 12 ? aikarsFlags.large : aikarsFlags.standard}`;
                 return `${Flags.prefix({ memory, pterodactyl, modernVectors })} ${base} ${Flags.suffix({ filename, gui })}`;
@@ -133,7 +133,7 @@ export const Flags: FlagsInterface = {
         "velocity": {
             "key": "velocity",
             "label": "Velocity & Waterfall",
-            "description": "Flags that work best with proxy software.",
+            "description": "适用于群组服的代理服务器",
             "result": ({ memory, filename, gui, pterodactyl, modernVectors }) => {
                 const base = "-XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch -XX:MaxInlineLevel=15";
                 return `${Flags.prefix({ memory, pterodactyl, modernVectors })} ${base} ${Flags.suffix({ filename, gui })}`;

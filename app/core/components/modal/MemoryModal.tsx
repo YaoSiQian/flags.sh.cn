@@ -44,7 +44,7 @@ export function MemoryModal({ open, defaultMemory, defaultPterodactyl }: MemoryM
             defaultPterodactyl.set(pterodactylValue.value);
         }}>
             {/* Precise memory selector */}
-            <Label label="Allocated memory (GB)">
+            <Label label="分配的内存 (GB)">
                 <NumberInput value={memoryValue.value} min={0} step={0.05} precision={2} onChange={value => {
                     if (!value) {
                         return;
@@ -55,8 +55,8 @@ export function MemoryModal({ open, defaultMemory, defaultPterodactyl }: MemoryM
             </Label>
 
             {/* Pterodactyl overhead switch */}
-            <InputCaption text="Allocates 85% of the provided memory to account for Java overhead within containers and adds console-related flags. Only applicable within the Java Command tab.">
-                <Switch label="Pterodactyl" checked={pterodactylValue.value} disabled={defaultPterodactyl.disabled} onChange={event => {
+            <InputCaption text="分配所提供内存的 85% 以解决容器内的 Java 开销，并添加与控制台相关的标志。仅适用于 Java 命令选项卡。">
+                <Switch label="翼龙面板" checked={pterodactylValue.value} disabled={defaultPterodactyl.disabled} onChange={event => {
                     pterodactylValue.set(event.target.checked);
                 }} />
             </InputCaption>

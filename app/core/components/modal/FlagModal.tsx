@@ -32,8 +32,8 @@ export function FlagModal({ open, defaultModernVectors }: FlagModalProps) {
             defaultModernVectors.set(modernVectors.value);
         }}>
             {/* Modern Java switch */}
-            <InputCaption text="Adds a flag that enables incubating SIMD vectors, which significantly speeds up map item rendering. Only applicable in Pufferfish-based forks and servers running Java 17 with Hotspot.">
-                <Switch label="Modern Vectors" checked={modernVectors.value} disabled={defaultModernVectors.disabled} onChange={event => {
+            <InputCaption text="添加一个启用孵化 SIMD 向量的参数，可以显着加快地图项目渲染速度。仅适用于基于 Pufferfish 的分支和运行带有 Hotspot 的 Java 17 的服务器。">
+                <Switch label="现代向量" checked={modernVectors.value} disabled={defaultModernVectors.disabled} onChange={event => {
                     modernVectors.set(event.target.checked);
                 }} />
             </InputCaption>

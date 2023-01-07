@@ -10,7 +10,7 @@ import { ActionButtonOptions } from "./interface/ActionButtonOptions";
 export function AboutLink({ filled = false }: ActionButtonOptions): ReactElement {
     return (
         <Link href={Routes.About()}>
-            <ActionIcon color="green" size="lg" variant={filled ? "filled" : "hover"} title="Visit the about page">
+            <ActionIcon color="green" size="lg" variant={filled ? "filled" : "hover"} title="访问关于页面">
                 <IconQuestionMark />
             </ActionIcon>
         </Link>

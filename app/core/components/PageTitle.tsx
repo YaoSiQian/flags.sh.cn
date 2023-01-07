@@ -13,7 +13,7 @@ export function PageTitle(): ReactElement {
     return (
         <Group>
             <Link href={Routes.Home()}>
-                <ActionIcon size="xl" radius="xs" variant="transparent" title="Return to the home page">
+                <ActionIcon size="xl" radius="xs" variant="transparent" title="返回主页">
                     <Logo />
                 </ActionIcon>
             </Link>

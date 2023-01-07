@@ -7,7 +7,7 @@ import { Center, Group, Title, Text, Anchor } from "@mantine/core";
  */
 export default function Page404(): ReactElement {
     const statusCode = 404;
-    const title = "This page could not be found";
+    const title = "该页面不存在";
 
     const router = useRouter();
 
@@ -32,10 +32,10 @@ export default function Page404(): ReactElement {
                         <Anchor onClick={() => {
                             router.back();
                         }}>
-                            Back
+                            返回
                         </Anchor>
                         <Link href={Routes.Home()} passHref>
-                            <Anchor>Home</Anchor>
+                            <Anchor>主页</Anchor>
                         </Link>
                     </Group>
                 </Group>

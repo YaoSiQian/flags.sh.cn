@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
  */
 function RootErrorFallback({ error }: ErrorFallbackProps) {
     return error instanceof AuthorizationError ? (
-        <ErrorComponent statusCode={error.statusCode} title="Sorry, you are not authorized to access this"/>
+        <ErrorComponent statusCode={error.statusCode} title="抱歉，您无权访问此内容"/>
     ) : (
         <ErrorComponent statusCode={error.statusCode || 400} title={error.message || error.name} />
     );

@@ -10,7 +10,7 @@ import { ActionButtonOptions } from "./interface/ActionButtonOptions";
 export function GitHubLink({ filled = false }: ActionButtonOptions): ReactElement {
     return (
         <Anchor href={SiteDetails.links.github} target="_blank">
-            <ActionIcon color="green" size="lg" variant={filled ? "filled" : "hover"} title="Visit the GitHub repository">
+            <ActionIcon color="green" size="lg" variant={filled ? "filled" : "hover"} title="访问 GitHub 存储库">
                 <IconBrandGithub />
             </ActionIcon>
         </Anchor>

@@ -10,7 +10,7 @@ import { ActionButtonOptions } from "./interface/ActionButtonOptions";
 export function HomeLink({ filled = false }: ActionButtonOptions): ReactElement {
     return (
         <Link href={Routes.Home()}>
-            <ActionIcon color="green" size="lg" variant={filled ? "filled" : "hover"} title="Return to the home page">
+            <ActionIcon color="green" size="lg" variant={filled ? "filled" : "hover"} title="返回主页">
                 <IconHome />
             </ActionIcon>
         </Link>

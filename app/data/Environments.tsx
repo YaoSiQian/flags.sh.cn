@@ -108,8 +108,8 @@ export const Environments: EnvironmentsInterface = {
                     while [ true ]; do
                         ${flags}
                     
-                        echo Server restarting...
-                        echo Press CTRL + C to stop.
+                        echo 正在重启服务器...
+                        echo 按下 CTRL + C 以暂停
                     done
                 `);
             },
@@ -128,8 +128,8 @@ export const Environments: EnvironmentsInterface = {
                     :start
                     ${flags}
                     
-                    echo Server restarting...
-                    echo Press CTRL + C to stop.
+                    echo 正在重启服务器...
+                    echo 按下 CTRL + C 以暂停
                     goto :start
                 `);
             },

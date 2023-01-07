@@ -66,7 +66,7 @@ function Home({ environmentTabs, flagSelectors }: HomeProps) {
         "modernVectors": true
     });
 
-    const [result, setResult] = useState<string>("Loading...");
+    const [result, setResult] = useState<string>("加载中...");
 
     const [environment, setEnvironment] = useState<EnvironmentType>(Environments.default);
     const [selectedFlags, setSelectedFlags] = useState<FlagType>(Flags.default);
@@ -143,14 +143,14 @@ function Home({ environmentTabs, flagSelectors }: HomeProps) {
                             {/* Left options */}
                             <Group direction="column" grow>
                                 {/* Filename selector */}
-                                <InputCaption text="The file used to launch the server. Located in the same directory as your configuration files.">
-                                    <Label label="Filename">
+                                <InputCaption text="用于启动服务器的服务端文件，在你的配置文件的同级文件夹内。">
+                                    <Label label="文件名">
                                         <TextInput defaultValue={defaultFilename} error={invalidFilename} icon={<IconArchive />} onChange={event => {
                                             const value = event.target.value;
 
                                             // Ensure the input is valid
                                             if (!value.includes(".jar")) {
-                                                setInvalidFilename("Filename must end with .jar");
+                                                setInvalidFilename("文件名必须以 .jar 结尾");
                                             } else {
                                                 setInvalidFilename(false);
                                                 setFileName(event.target.value);
@@ -160,14 +160,14 @@ function Home({ environmentTabs, flagSelectors }: HomeProps) {
                                 </InputCaption>
 
                                 {/* Memory selector */}
-                                <Label label="Memory" icon={
+                                <Label label="内存" icon={
                                     <ActionIcon size="xs" variant="transparent" onClick={() => {
                                         setOpenMemoryModal(true);
                                     }}>
                                         <IconTool />
                                     </ActionIcon>
                                 }>
-                                    <MarkedSlider interval={4} step={0.5} min={0.5} max={24} value={memory} thumbLabel="Memory allocation slider" label={value => {
+                                    <MarkedSlider interval={4} step={0.5} min={0.5} max={24} value={memory} thumbLabel="内存设置" label={value => {
                                         return `${value.toFixed(1)} GB`;
                                     }} intervalLabel={value => {
                                         return `${value} GB`;
@@ -180,7 +180,7 @@ function Home({ environmentTabs, flagSelectors }: HomeProps) {
                             {/* Right options */}
                             <Group direction="column" grow>
                                 {/* Flags selector */}
-                                <Label label="Flags" icon={
+                                <Label label="启动指令模板" icon={
                                     <ActionIcon size="xs" variant="transparent" onClick={() => {
                                         setOpenFlagModal(true);
                                     }}>
@@ -201,13 +201,13 @@ function Home({ environmentTabs, flagSelectors }: HomeProps) {
                                 </Label>
 
                                 {/* Misc toggles */}
-                                <InputCaption text="Enables the server's GUI control panel. Automatically disabled in environments without a desktop.">
+                                <InputCaption text="启动服务端的 GUI 操作面板。在命令行环境下默认禁用。">
                                     <Switch label="GUI" checked={!disabled.gui && toggles.gui} disabled={disabled.gui} onChange={event => {
                                         setToggles({ ...toggles, "gui": event.target.checked });
                                     }} />
                                 </InputCaption>
-                                <InputCaption text={`Automatically restarts the server after it crashes or is stopped. Press CTRL + C to exit the script.`}>
-                                    <Switch label="Auto-restart" checked={!disabled.autoRestart && toggles.autoRestart} disabled={disabled.autoRestart} onChange={event => {
+                                <InputCaption text={`在关服或崩溃后自动重启服务端。按下 CTRL + C 退出脚本（不支持面板）`}>
+                                    <Switch label="自动重启" checked={!disabled.autoRestart && toggles.autoRestart} disabled={disabled.autoRestart} onChange={event => {
                                         setToggles({ ...toggles, "autoRestart": event.target.checked });
                                     }} />
                                 </InputCaption>
@@ -215,7 +215,7 @@ function Home({ environmentTabs, flagSelectors }: HomeProps) {
                         </Group>
 
                         {/* Resulting flags */}
-                        <Label label={<Text size="xl" weight={700}>Result</Text>}>
+                        <Label label={<Text size="xl" weight={700}>结果</Text>}>
                             <Prism.Tabs styles={theme => ({
                                 "copy": {
                                     "backgroundColor": isDark ? theme.colors.dark[6] : theme.colors.gray[0],
@@ -251,7 +251,7 @@ function Home({ environmentTabs, flagSelectors }: HomeProps) {
                         <SideBySide leftSide={
                             <Group noWrap>
                                 {/* Download button */}
-                                <ActionIcon color="green" variant="filled" size="lg" title="Download current script" disabled={disabled.download} onClick={() => {
+                                <ActionIcon color="green" variant="filled" size="lg" title="下载当前脚本" disabled={disabled.download} onClick={() => {
                                     if (environment.file) {
                                         saveText(result, environment.file);
                                     }
@@ -266,7 +266,7 @@ function Home({ environmentTabs, flagSelectors }: HomeProps) {
                                     <IconAlertCircle />
                                     <Text sx={{
                                         "whiteSpace": "pre-wrap"
-                                    }}>It is recommended to allocate at least <Code>4 GB</Code> of memory.</Text>
+                                    }}>建议选择至少 <Code>4 GB</Code> 内存。</Text>
                                 </Group>
                             </Group>
                         } rightSide={
