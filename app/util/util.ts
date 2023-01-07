@@ -8,6 +8,6 @@ export const SiteDetails = {
     "logo": "/asset/logo.png",
     "links": {
         "github": "https://github.com/YaoSiQian/flags.sh.cn",
-        "support": "https://encode42.dev/support"
+        "support": "https://space.bilibili.com/32539465"
     }
 };
