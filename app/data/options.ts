@@ -103,14 +103,14 @@ export const environment: Environment = {
             ]
         },
         "pterodactyl": {
-            "label": "Pterodactyl",
+            "label": "翼龙面板",
             "icon": "IconServer",
             "config": [
                 ...sharedSupported.operatingSystem,
             ]
         },
         "command": {
-            "label": "Command",
+            "label": "命令行",
             "icon": "IconTerminal",
             "config": [
                 ...sharedSupported.operatingSystem,
@@ -168,8 +168,8 @@ export const environment: Environment = {
 
 export const config: Config = {
     "filename": {
-        "label": "File name",
-        "description": "The name of the file that will be used to start your server.",
+        "label": "文件名",
+        "description": "将用于启动服务器的服务端的名称。",
         "row": 0,
         "type": {
             "component": "TextInput",
@@ -177,8 +177,8 @@ export const config: Config = {
         }
     },
     "flags": {
-        "label": "Flags",
-        "description": "The collection of start arguments that typically optimize the server's performance.",
+        "label": "参数",
+        "description": "可以优化服务器性能的启动参数的集合。",
         "row": 0,
         "type": {
             "component": "Flags",
@@ -186,8 +186,8 @@ export const config: Config = {
         }
     },
     "memory": {
-        "label": "Memory",
-        "description": "The amount of memory (RAM) to allocate to your server. Values below <Code>4 GB</Code> and above <Code>12 GB</Code> aren't recommended.",
+        "label": "内存",
+        "description": "分配给服务器的内存 (RAM) 量。不建议低于 <Code>4 GB</Code> 或高于 <Code>12 GB</Code> 的值。",
         "row": 1,
         "type": {
             "component": "Slider",
@@ -207,38 +207,38 @@ export const config: Config = {
     },
     "gui": {
         "label": "GUI",
-        "description": "Whether to display the built-in management GUI.",
+        "description": "是否显示服务端内置图形管理界面。",
         "row": 2,
         "type": {
             "component": "Checkbox",
             "icon": "IconAppWindow",
             "props": {
-                "label": "Enable GUI"
+                "label": "启用 GUI"
             }
         }
     },
     "autorestart": {
-        "label": "Auto-restart",
-        "description": "Whether to automatically restart after crash.",
+        "label": "自动重启",
+        "description": "是否在崩溃后自动重启。",
         "row": 2,
         "type": {
             "component": "Checkbox",
             "icon": "IconRefresh",
             "props": {
-                "label": "Enable auto-restart"
+                "label": "启用 自动重启"
             }
         }
     },
     "variables": {
-        "label": "Use variables",
-        "description": "Whether to use script variables for common elements.",
+        "label": "使用变量",
+        "description": "是否对公共元素使用脚本变量。",
         "row": 2,
         "isAdvanced": true,
         "type": {
             "component": "Checkbox",
             "icon": "IconCode",
             "props": {
-                "label": "Use variables"
+                "label": "使用变量"
             }
         }
     }
@@ -246,22 +246,22 @@ export const config: Config = {
 
 export const flags: Flags = {
     "none": {
-        "label": "None"
+        "label": "无"
     },
     "aikars": {
         "label": "Aikar's Flags",
-        "description": "The cool"
+        "description": "牛的"
     },
     "proxy": {
-        "label": "Proxy",
-        "description": "Generic flags that work on all proxy servers."
+        "label": "代理服",
+        "description": "适用于所有代理服务器的通用标志。"
     }
 };
 
 export const extraFlags: ExtraFlags = {
     "vectors": {
-        "label": "Modern vectors",
-        "description": "Enables SIMD operations to optimize map item rendering.",
+        "label": "更新的载体（Vectors）",
+        "description": "启用 SIMD 操作以优化地图项渲染。",
         "supports": ["aikars"]
     }
 };

@@ -22,13 +22,13 @@ interface Tab {
 
 const tabs: Tab[] = [{
     "value": "environment",
-    "label": "Environment"
+    "label": "环境"
 }, {
     "value": "configuration",
-    "label": "Configuration"
+    "label": "配置"
 }, {
     "value": "result",
-    "label": "Result"
+    "label": "结果"
 }];
 
 const code = `
@@ -172,9 +172,9 @@ export default function SetupPage() {
                             <Stack>
                                 <Stack spacing="xs">
                                     <Title order={3}>
-                                        Operating System
+                                        操作系统
                                     </Title>
-                                    <Text color="dimmed" size="sm">The operating system that the server runs on. If you access your server though a website, you're likely using Pterodactyl</Text>
+                                    <Text color="dimmed" size="sm">服务器运行的操作系统。</Text>
                                 </Stack>
                                 <SimpleGrid cols={2}>
                                     {Object.entries(environment.operatingSystem).map(([key, value]) => {
@@ -197,9 +197,9 @@ export default function SetupPage() {
                             <Stack>
                                 <Stack spacing="xs">
                                     <Title order={3}>
-                                        Server Type
+                                        服务器类型
                                     </Title>
-                                    <Text color="dimmed" size="sm">The type of server software you're using. Typically, your server utilizes Paper or Purpur to handle connections and gameplay.</Text>
+                                    <Text color="dimmed" size="sm">您正在使用的服务器软件类型。通常，您的服务器使用 Paper 或 Purpur 来处理连接和游戏。</Text>
                                 </Stack>
                                 <SimpleGrid cols={2}>
                                     {Object.entries(environment.serverType).map(([key, value]) => {
@@ -244,8 +244,8 @@ export default function SetupPage() {
                         <Stack>
                             <Stack>
                                 <Stack spacing={0}>
-                                    <Title order={3}>Script</Title>
-                                    <Text color="dimmed" size="sm">The resulting script to start your server. Place this file in the same location as <Code>server.jar</Code>, then run it!</Text>
+                                    <Title order={3}>脚本</Title>
+                                    <Text color="dimmed" size="sm">用于启动服务器的生成脚本。将此文件放在与 <Code>server.jar</Code> 相同的位置，然后运行！</Text>
                                 </Stack>
                                 <Prism language="bash" withLineNumbers noCopy styles={{
                                     "line": {
@@ -267,13 +267,13 @@ export default function SetupPage() {
                                     "to": "green",
                                     "deg": 120
                                 }}>
-                                    Download
+                                    下载
                                 </Button>
                                 <Button leftIcon={<IconCopy />} variant="outline">
-                                    Copy
+                                    复制
                                 </Button>
                                 <Button leftIcon={<IconShare />} variant="outline">
-                                    Share
+                                    分享
                                 </Button>
                             </Group>
                         </Stack>

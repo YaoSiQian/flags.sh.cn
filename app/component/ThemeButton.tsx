@@ -6,7 +6,7 @@ export function ThemeButton() {
     const isDark = colorScheme === "dark";
 
     return (
-        <ActionIcon title={`Switch to ${isDark ? "light" : "dark"} mode`} size="xl" variant="gradient" gradient={isDark ? {
+        <ActionIcon title={`切换到 ${isDark ? "亮色" : "暗色"} 模式`} size="xl" variant="gradient" gradient={isDark ? {
             "from": "yellow",
             "to": "orange",
             "deg": 120

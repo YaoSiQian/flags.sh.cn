@@ -18,21 +18,21 @@ export function Footer({ extra }: FooterProps) {
                 </Group>
                 <Group>
                     <ThemeButton />
-                    <ActionIcon component={Anchor} to="/about" title="About this website" size="xl" variant="gradient" gradient={{
+                    <ActionIcon component={Anchor} to="/about" title="关于" size="xl" variant="gradient" gradient={{
                         "from": "lime",
                         "to": "green",
                         "deg": 120
                     }}>
                         <IconHomeQuestion color="white" />
                     </ActionIcon>
-                    <ActionIcon component={Anchor} to={details.links.discord} title="Discord community for support" size="xl" variant="gradient" gradient={{
+                    <ActionIcon component={Anchor} to={details.links.discord} title="帮助" size="xl" variant="gradient" gradient={{
                         "from": "#7984f5",
                         "to": "#5865F2",
                         "deg": 120
                     }}>
                         <IconBrandDiscord color="white" />
                     </ActionIcon>
-                    <ActionIcon component={Anchor} to={details.links.github} title="GitHub repository for this website" size="xl" variant="gradient" gradient={{
+                    <ActionIcon component={Anchor} to={details.links.github} title="GitHub" size="xl" variant="gradient" gradient={{
                         "from": "#555",
                         "to": "#333",
                         "deg": 120

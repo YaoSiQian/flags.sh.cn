@@ -18,10 +18,10 @@ export function Header() {
                             "deg": 120
                         }} sx={{
                             "fontSize": theme.fontSizes.xl * 2
-                        }}>flags.sh</Title>
+                        }}>flags.sh.cn</Title>
                     </Group>
                 </Anchor>
-                <Text size="lg" align="center">A simple script generator to start your Minecraft servers with optimal flags.</Text>
+                <Text size="lg" align="center">一个简单的脚本生成器，用于以最佳参数启动您的 Minecraft 服务器。</Text>
             </Stack>
         </ThemePaper>
     );

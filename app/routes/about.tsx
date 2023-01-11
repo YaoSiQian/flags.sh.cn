@@ -4,7 +4,7 @@ import { StandardLayout } from "~/layout/StandardLayout";
 export default function AboutPage() {
     return (
         <StandardLayout>
-            <Title>W.I.P.</Title>
+            <Title>绝赞制作中……</Title>
         </StandardLayout>
     );
 }

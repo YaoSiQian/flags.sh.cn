@@ -78,7 +78,7 @@ export default function App() {
 
 function BasicDocument({ colorScheme = config.colorScheme, children }: BasicDocumentProps) {
     return (
-        <html lang="en">
+        <html lang="zh-Hans-CN">
             <head>
                 <title>{details.name}</title>
                 <Meta />

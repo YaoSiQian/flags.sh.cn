@@ -1,7 +1,7 @@
 export const details = {
-    "name": "Minecraft's Flags",
+    "name": "MC服务器启动脚本",
     "links": {
-        "discord": "https://encode42.dev/support",
-        "github": "https://github.com/Encode42/flags.sh"
+        "discord": "https://space.bilibili.com/32539465",
+        "github": "https://github.com/YaoSiQian/flags.sh.cn"
     }
 };
