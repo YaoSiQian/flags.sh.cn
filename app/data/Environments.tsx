@@ -148,11 +148,7 @@ export const Environments: EnvironmentsInterface = {
                 "autoRestart": true,
                 "download": true
             },
-            "requires": {
-                "gui": {
-                    "excludes": ["pterodactyl"]
-                }
-            }
+            "requires": {}
         }
     }
 };

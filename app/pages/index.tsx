@@ -15,8 +15,6 @@ import { EnvironmentIcon, Environments, EnvironmentType, getIcon } from "../data
 // TODO: Share button
 // TODO: i18n
 
-// BUG: Java tab -> enable pterodactyl -> apply -> disable pterodactyl -> apply -> GUI will still be disabled
-
 /**
  * Data for a flag in the selector.
  */
