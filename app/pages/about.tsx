@@ -34,15 +34,6 @@ function About() {
                                 <Text>英文原版 <Anchor href="https://flags.sh" target="_blank">flags.sh</Anchor> 由 <Anchor href="https://encode42.dev/" target="_blank">Encode42</Anchor> 制作。</Text>
                             </Group>
                             <Group direction="column" spacing="xs">
-                                <Title order={2}>广告</Title>
-                                <Text>首先很抱歉影响了您的使用体验。但是独立的域名和服务器开销有点大，只能顺便引个流啦。</Text>
-                                <Text>
-                                    <Anchor href="https://www.civgame.net" target="_blank">我的世界文明游戏</Anchor>
-                                    一个非常牛逼的社会模拟服务器，长期服绝赞制作中！
-                                    点击查看 <Anchor href="https://space.bilibili.com/1803912517" target="_blank">B站官号</Anchor> 和 <Anchor href="https://jq.qq.com/?k=iwLi4qur" target="_blank">玩家交流群</Anchor>！
-                                </Text>
-                            </Group>
-                            <Group direction="column" spacing="xs">
                                 <Title order={2}>支持</Title>
                                 <Text>如何使用这个网站：</Text>
                                 <Text>
